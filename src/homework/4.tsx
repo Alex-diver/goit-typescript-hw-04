@@ -9,7 +9,7 @@ type SelectedMenu = {
 };
 
 type MenuSelected = {
-  SelectedMenu: SelectedMenu;
+  selectedMenu: SelectedMenu;
 };
 
 const MenuSelectedContext = createContext<MenuSelected>({
@@ -19,7 +19,7 @@ const MenuSelectedContext = createContext<MenuSelected>({
 // Додайте тип MenuAction
 
 type MenuAction = {
-  onSelectedMenu(SelectedMenu: SelectedMenu): void;
+  onSelectedMenu(selectedMenu: SelectedMenu): void;
 };
 
 const MenuActionContext = createContext<MenuAction>({
